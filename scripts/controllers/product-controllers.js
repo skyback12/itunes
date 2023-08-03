@@ -16,16 +16,16 @@ function showCard(product){
     const pTag = document.createElement('p');
     pTag.innerText  = "Genre:"+" "+ product.primaryGenreName +" " + "Date:" +" "+ product.releaseDate;
     pTag.className = 'card-text';
-    const music =document.createElement('audio')
+    const music =document.createElement('audio');
     music.controls='controls';
-    music.src=product['previewUrl'];
+    music.src=product.previewUrl;
     music.className='music';
     cardBody.appendChild(h5);
     cardBody.appendChild(pTag);
     cardBody.appendChild(music);
     cardDiv.appendChild(cardBody);
     const button = document.createElement('button');
-    button.innerText = 'Add to playlist';
+    button.innerText = 'Download';
     button.className = 'btn btn-primary';
     cardBody.appendChild(button);
     col.appendChild(cardDiv);
