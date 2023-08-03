@@ -5,7 +5,7 @@ class product{
         this.releaseDate=releaseDate;
         this.primaryGenreName=primaryGenreName;
         this.collectionPrice=collectionPrice;
-        this.trackViewUrl=trackViewUrl;
+        this.trackviewUrl=trackViewUrl;
         this.previewUrl=previewUrl;
     }
 
